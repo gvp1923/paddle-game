@@ -11,7 +11,7 @@ gamepadArray[0].right.gamePurpose = "Right";
 var BACKGROUND_COLOR = makeColor(0.1, 0.2, 0.2, 0.7);
 
 var PADDLE_SPEED     = 1000; // pixels per second
-var PADDLE_COLOR     = makeColor(0.2, 1.0, 1.0);
+var PADDLE_COLOR     = makeColor(1.0, 1.0, 0.3);
 
 var BALL_COLOR       = makeColor(1.0, 1.0, 0.3);
 
@@ -30,14 +30,14 @@ function onGameStart() {
         radius:       30,
 
         // pixels/second
-        velocity:     {x: +500,
+        velocity:     {x: +1500,
                        y: -500}};
 
     paddle = {
         position:     {x: screenWidth / 2,
                        y: screenHeight - 200},
         width:        300,
-        height:       50};
+        height:       1000};
 }
 
 
